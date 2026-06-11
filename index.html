@@ -3,68 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Agrotóxicos Sustentáveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* RESET E FONTES */
+        * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+        body{background:#f4fff4; color:#333;}
+
+        /* CABEÇALHO */
+        header{
+            display:flex; justify-content:space-between; align-items:center; padding:20px 40px;
+            background:#2e7d32; color:white;
+        }
+        header ul {list-style:none;}
+        header li {margin:5px 0;}
+        header img {height:50px;}
+
+        /* HERO */
+        .hero{
+            background:linear-gradient(135deg,#2e7d32,#66bb6a);
+            color:white;
+            text-align:center;
+            padding:120px 20px;
+        }
+        .hero h1{font-size:3rem; margin-bottom:20px;}
+        .hero p{font-size:1.2rem; margin-bottom:30px;}
+        .hero button{
+            padding:15px 30px; border:none; border-radius:30px;
+            cursor:pointer; font-weight:600; background:#fff; color:#2e7d32;
+            transition:0.3s;
+        }
+        .hero button:hover{background:#c8e6c9;}
+
+        /* SEÇÕES */
+        section{padding:60px 20px; text-align:center;}
+        section h2{font-size:2rem; margin-bottom:30px; color:#2e7d32;}
+
+        /* CARDS BENEFÍCIOS E CURIOSIDADES */
+        .cards{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+        .card{
+            width:300px;
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            transition:.3s;
+        }
+        .card:hover{transform:translateY(-10px);}
+        .card h3{margin-bottom:15px; color:#2e7d32;}
+
+        /* ESTATÍSTICAS */
+        .estatisticas{display:flex; justify-content:center; gap:50px; flex-wrap:wrap;}
+        .numero{background:#c8e6c9; padding:20px 40px; border-radius:15px; font-weight:600;}
+
+        /* QUIZ */
+        .quiz button{
+            padding:10px 20px; margin:10px; border:none; border-radius:10px;
+            cursor:pointer; background:#2e7d32; color:white; font-weight:600; transition:.3s;
+        }
+        .quiz button:hover{background:#66bb6a;}
+
+        /* RODAPÉ */
+        footer{
+            background:#2e7d32; color:white; text-align:center; padding:20px;
+        }
+        footer img{height:50px;}
+    </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="logo.png" alt="Logo sobre sustentabilidade agrícola">
-        <ul>
-            <li class="cabecalho-lista-item">Uso consciente de agrotóxicos</li>
-            <li class="cabecalho-lista-item">Protegendo a saúde e o meio ambiente</li>
-        </ul>
 
-        <div id="acessibilidade" class="menu-acessibilidade">
-            <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">Acessibilidade</button>
-            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-                <button id="alterna-contraste" class="btn btn-primary fw-bold">Alto contraste</button>
-            </div>
+<!-- CABEÇALHO -->
+<header>
+    <img src="img/github.png" alt="Logo do projeto">
+    <ul>
+        <li>Agro Forte, Futuro Sustentável</li>
+        <li>Equilíbrio entre produção e meio ambiente</li>
+    </ul>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Agrotóxicos Sustentáveis</h1>
+    <p>Tecnologias que protegem as plantações com menor impacto ambiental.</p>
+    <button onclick="mostrarCuriosidade()">Descobrir Curiosidade</button>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+    <h2>O que são?</h2>
+    <p>Agrotóxicos sustentáveis são produtos desenvolvidos para controlar pragas, doenças e plantas invasoras com menor impacto ao meio ambiente.</p>
+    <p>Muitos deles são produzidos a partir de organismos naturais, como fungos, bactérias e extratos vegetais.</p>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="beneficios">
+    <h2>Benefícios</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌱 Menor Impacto Ambiental</h3>
+            <p>Reduz a contaminação do solo e da água.</p>
         </div>
-    </header>
-
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">O que são agrotóxicos?</h2>
-            <p class="agro-texto-um">
-                Agrotóxicos são substâncias químicas usadas na agricultura para controlar pragas, doenças e plantas invasoras. 
-                Seu uso inadequado pode prejudicar o solo, a água, os alimentos e a saúde humana.
-            </p>
+        <div class="card">
+            <h3>🐝 Proteção aos Polinizadores</h3>
+            <p>Menos riscos para abelhas e outros insetos importantes.</p>
         </div>
-        <img class="agro-imagem" src="img/agrotoxicos.jpg" alt="Agricultura e agrotóxicos">
-    </section>
-
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">Uso sustentável de agrotóxicos</h2>
-            <p class="agro-texto-um">
-                Para reduzir impactos, o uso sustentável envolve técnicas como rotação de culturas, controle biológico de pragas, 
-                adubação orgânica e monitoramento constante das lavouras. O objetivo é garantir produtividade sem comprometer o meio ambiente.
-            </p>
+        <div class="card">
+            <h3>🌎 Agricultura Sustentável</h3>
+            <p>Maior equilíbrio entre produção e preservação ambiental.</p>
         </div>
-        <img class="agro-imagem" src="img/agricultura-sustentavel.jpg" alt="Práticas agrícolas sustentáveis">
-    </section>
+    </div>
+</section>
 
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">Benefícios do manejo sustentável</h2>
-            <p class="agro-texto-um">
-                O manejo consciente de agrotóxicos protege a biodiversidade, reduz resíduos químicos em alimentos e aumenta a qualidade do solo, 
-                garantindo uma agricultura mais saudável e segura para todos.
-            </p>
+<!-- CURIOSIDADES -->
+<section class="curiosidades">
+    <h2>Curiosidades</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🐞 Controle Biológico</h3>
+            <p>Joaninhas são usadas para combater pulgões naturalmente.</p>
         </div>
-        <img class="agro-imagem" src="img/beneficios-sustentaveis.jpg" alt="Benefícios da agricultura sustentável">
-    </section>
+        <div class="card">
+            <h3>🍃 Extrato de Neem</h3>
+            <p>O óleo de neem é um inseticida natural amplamente utilizado.</p>
+        </div>
+        <div class="card">
+            <h3>🌿 Fungos Benéficos</h3>
+            <p>Alguns fungos atacam apenas pragas agrícolas, sem prejudicar as plantas.</p>
+        </div>
+    </div>
+</section>
 
-    <footer class="rodape">
-        <img class="rodape-imagem" src="logo.png" alt="Logo do projeto">
-        <p>© 2026 Agro Sustentável - Todos os direitos reservados</p>
-    </footer>
+<!-- ESTATÍSTICAS -->
+<section class="estatisticas">
+    <h2>Números Importantes</h2>
+    <div class="numero">
+        <h3>80%</h3>
+        <p>Redução de resíduos químicos em sistemas biológicos.</p>
+    </div>
+    <div class="numero">
+        <h3>+50</h3>
+        <p>Países utilizam controle biológico em larga escala.</p>
+    </div>
+</section>
 
-    <script src="main.js"></script>
+<!-- QUIZ -->
+<section class="quiz">
+    <h2>Quiz Sustentável</h2>
+    <p>Qual destes é um exemplo de controle biológico?</p>
+    <button onclick="respostaCorreta()">Joaninhas</button>
+    <button onclick="respostaErrada()">Gasolina</button>
+    <button onclick="respostaErrada()">Plástico</button>
+    <p id="resultado" style="margin-top:20px; font-weight:bold;"></p>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <p>Agro Forte - Futuro Sustentável</p>
+    <img src="img/logo.png" alt="Logo do projeto">
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+function respostaCorreta() {
+    document.getElementById("resultado").innerHTML = "✅ Correto! Joaninhas ajudam no controle de pulgões.";
+}
+function respostaErrada() {
+    document.getElementById("resultado").innerHTML = "❌ Tente novamente.";
+}
+function mostrarCuriosidade() {
+    const curiosidades = [
+        "🐝 As abelhas são responsáveis por grande parte da polinização mundial.",
+        "🌿 O óleo de neem é usado como defensivo natural.",
+        "🐞 Joaninhas podem comer dezenas de pulgões por dia.",
+        "🌎 O controle biológico reduz a necessidade de produtos químicos."
+    ];
+    const sorteio = curiosidades[Math.floor(Math.random() * curiosidades.length)];
+    alert(sorteio);
+}
+</script>
+
 </body>
 </html>
