@@ -1,17 +1,17 @@
-🌾 Título do projeto
+🌾 Agrotoxicos de forma sustentavel
 Projeto desenvolvido para o Concurso Agrinho 2026 – Categoria Programação, na Subcategoria 3: Programação Front-End – HTML, CSS e JavaScript.
 
 🌱 Tema do Concurso
 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente
 
 📌 Sobre o Projeto
-O projeto “Título do projeto” (explique o seu projeto, o que ele apresenta)
+O projeto “Sustentabilidade nos agrotoxicos” (explique o seu projeto, o que ele apresenta)
 
-Por meio de textos, imagens, quiz, curiosidades, vídeo e história em quadrinhos, o site busca aproximar o visitante da realidade do campo e destacar a importância de produzir com responsabilidade ambiental.
+Por meio de textos, imagens, curiosidades, o site busca aproximar o visitante da realidade do campo e destacar a importância de produzir com responsabilidade ambiental.
 🎯 Objetivo
 O objetivo do projeto é ......................................
 
-O site busca explicar, de maneira simples e interativa, como a cadeia produtiva da cevada e do malte envolve diferentes etapas, pessoas, tecnologias e impactos positivos para a sociedade.
+O site busca explicar, de maneira simples, como a cadeia produtiva da cevada e do malte envolve diferentes etapas, pessoas, tecnologias e impactos positivos para a sociedade.
 
 🧭 Funcionalidades do Site
 O projeto conta com as seguintes funcionalidades:
