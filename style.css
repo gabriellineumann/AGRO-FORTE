@@ -20,8 +20,8 @@
 }
 
 .cabecalho-imagem{
-    width: 15%;
-    margin: 0 10px;
+    <img src="img/drone.png" alt="Logo do projeto" width="150">
+<img src="img/milho: .;" alt="Campo de soja" style="width:100%; max-width:600px;">
 }
 
 .cabecalho-lista-item{
@@ -31,6 +31,7 @@
 }
 
 .agro-imagem{
+
     width: 25%;
     margin: 10px;
 }
